@@ -1,0 +1,20 @@
+// check the Palindrome sequence of the String//
+public class PalindromecheckMain
+{
+	public static void main(String[] args) {
+	String a = "ababa";
+	if(isPalindrome(a)==true){
+	    System.out.println(a+" is a palindrome sequence");
+	}
+	else{
+	    System.out.println(a+" is not a palindrome");
+	}
+	}
+	public static boolean isPalindrome(String a){
+	    String reversed = new StringBuilder(a).reverse().toString();
+	    return a.equals(reversed);
+	}
+}
+
+output:
+ababa is a palindrome sequence
