@@ -1,0 +1,31 @@
+import java.util.Arrays;
+public class PalindromecheckMain
+{
+	public static void main(String[] args) {
+	String str1 = "silent";
+	String str2 = "listen";
+	if(areanagrams(str1,str2)){
+	    System.out.println(str1+"and"+str2+" is a anagrams");
+	}
+	else{
+	    System.out.println(str1+"and"+str2+" is not a anagrams");
+	}
+	}
+	public static boolean areanagrams(String str1,String str2){
+	    if(str1.length()!=str2.length()){
+	        return false;
+	    }
+	    char[] array1 = str1.toCharArray();
+        char[] array2 = str2.toCharArray();
+        
+        Arrays.sort(array1);
+        Arrays.sort(array2);
+        
+         return Arrays.equals(array1, array2);
+
+	}
+}
+
+
+output;
+silentandlisten is a anagrams
